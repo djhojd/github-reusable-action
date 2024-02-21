@@ -1,4 +1,4 @@
-name: Workflow C
+name: Workflow C (Matrix)
 
 on:
   push:
