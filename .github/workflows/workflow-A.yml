@@ -1,5 +1,4 @@
 # This is a basic workflow to help you get started with Actions
-
 name: Workflow A
 
 # Controls when the workflow will run
@@ -37,3 +36,8 @@ jobs:
 
   call-workflow:
     uses: ./.github/workflows/workflow-B.yml
+
+  call-workflow-again:
+    needs: build
+    uses: ./.github/workflows/workflow-B.yml
+
