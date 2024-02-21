@@ -17,3 +17,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Print the event payload
+        run: echo ${{ toJson(github.event) }}
