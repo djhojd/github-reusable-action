@@ -22,3 +22,10 @@ jobs:
       
       - name: Print NPM version
         run: npm --version
+
+  print:
+    runs-on: ubuntu-latest
+    needs: matrix
+    steps:
+      - name: Print Matrix values
+        run: echo "${{ toJson(needs.matrix.outputs) }}"
